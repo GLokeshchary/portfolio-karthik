@@ -7,12 +7,17 @@
 .swiperEffectCoverFlow-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 400px; /* slightly reduced from 500px to balance layout */
+  height: 400px; /* fixed height for better control */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiperEffectCoverFlow-slide img {
-  display: block;
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* makes the image fill the container nicely */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }

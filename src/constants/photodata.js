@@ -9,7 +9,14 @@ export const images = [
   "/photo8.jpeg",
 ];
 
-export const imagesSpecific = ["/photo1.jpeg", "/photo3.jpeg", "/photo7.jpeg"];
+export const imagesSpecific = [
+  "/photo1.jpeg",
+  "/photo3.jpeg",
+  "/photo7.jpeg",
+  "/photo8.jpeg",
+  "/photo9.jpg",
+  "/photo11.jpg",
+];
 
 export const bigslides = ["/big2.jpg", "/big3.jpg", "/big1.jpg", "big4.png"];
 
@@ -20,4 +27,5 @@ export const marr = [
   "/marr4.png",
   "/marr5.png",
   "/marr6.png",
+  "/photo12.jpg",
 ];
