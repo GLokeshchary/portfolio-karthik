@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-import "./EffectCoverflow.css";
+import "./EffectCoverFlow.css";
 
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper/modules";
@@ -34,7 +34,7 @@ const EffectCoverFlow = () => {
         className="swiperEffectCoverFlow"
       >
         {imagesSpecific?.map((image, index) => (
-          <SwiperSlide className="swiperEffectCoverFlow-slide">
+          <SwiperSlide key={index} className="swiperEffectCoverFlow-slide">
             <img src={image} />
           </SwiperSlide>
         ))}
