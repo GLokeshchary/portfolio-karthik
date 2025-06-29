@@ -1,0 +1,40 @@
+.cube-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+.swipercube {
+  width: 350px;
+  height: 350px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Ensure images fill the slides */
+.swipercube .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* Responsive - tablets */
+@media (max-width: 768px) {
+  .swipercube {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+/* Responsive - phones */
+@media (max-width: 480px) {
+  .swipercube {
+    width: 220px;
+    height: 220px;
+  }
+}

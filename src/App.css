@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Poppins:ital,wght@0,200;0,400;1,200&display=swap");
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: "Libertinus Mono", monospace;
+  background: #3f5efb;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  color: #333;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* App Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background-color: wheat;
+}
+
+.main-section {
+  flex: 1;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background: transparent;
+}
+
+/* Sections */
+.coverflow-section,
+.cube-section {
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #eee;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-section {
+    padding: 20px 10px;
+    gap: 40px;
+  }
+
+  .coverflow-section,
+  .cube-section {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .footer {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
